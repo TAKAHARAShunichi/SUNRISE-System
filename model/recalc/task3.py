@@ -18,7 +18,7 @@ import acell
 from sunrise import metrics
 from sunrise.model import cpi_attachment
 
-LO, HI = 1.0e9, 2.0e13
+LO, HI = 1.0e10, 5.0e12
 NADIR_TARGET, CURE = 3.0, 100.0
 
 
@@ -50,31 +50,26 @@ def main() -> None:
     print("Table 9.4.30  minimum dose through the worst dosing phase, by tau_P")
     print("=" * 74)
     print(f"  {'tau_P':>6}{'n_dose':>8}{'worst dt':>10}{'D_min':>12}"
-          f"{'per course':>12}{'m_inf':>9}{'D_max':>12}")
+          f"{'per course':>12}{'m_inf':>9}")
     print("  " + "-" * 69)
     for tau in (2.0, 3.0, 4.0, 6.0, 8.0, 12.0):
-        n_phase = 6
+        n_phase = 4
         phases = [k * tau / n_phase for k in range(n_phase)]
         worst_D, worst_dt = -1.0, None
         for dt in phases:
             q = dict(p, tau_p=tau, delta_t=dt)
             D = d_min(q)
+            print(f'      tau_P={tau:.0f} dt={dt:.2f} -> D_min={D:.4g}', flush=True)
             if np.isnan(D):
                 worst_D, worst_dt = float("nan"), dt
                 break
             if D > worst_D:
                 worst_D, worst_dt = D, dt
         q = dict(p, tau_p=tau, delta_t=worst_dt)
-        n_dose = len(__import__("sunrise.model", fromlist=["dose_times"]).dose_times(q))
-        # window ceiling at the same tau_P / worst phase
-        try:
-            Dmax = float(brentq(
-                lambda D: acell.acell_stats(dict(q, dose=D))["max"] - acell.WINDOW_HI,
-                1.0e10, 2.0e12, xtol=1e8, rtol=1e-5))
-        except ValueError:
-            Dmax = float("nan")
+        from sunrise.model import dose_times
+        n_dose = len(dose_times(q))
         print(f"  {tau:>6.0f}{n_dose:>8d}{worst_dt:>10.2f}{worst_D:>12.4g}"
-              f"{worst_D*n_dose:>12.4g}{m_inf_of(q, worst_D):>9.1f}{Dmax:>12.4g}")
+              f"{worst_D*n_dose:>12.4g}{m_inf_of(q, worst_D):>9.1f}", flush=True)
     print(f"\n  ({time.time()-t0:.0f} s)\n")
 
     print("=" * 74)
