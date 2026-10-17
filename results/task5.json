@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "psi_max_in": 0.69,
+      "C_bar": 82.98869573258892,
+      "delta_log": 6.2959140495451,
+      "passes_depth": true,
+      "passes_durability": true,
+      "passes": true,
+      "residual_CFU_bladder_72h": 53322.91624378196,
+      "C_bar_over_K_in": 1.6597739146517785,
+      "K_in_max_passing": 60.37425290574825
+    },
+    {
+      "psi_max_in": 1.19,
+      "C_bar": 86.63874649528057,
+      "delta_log": 6.277114129252221,
+      "passes_depth": true,
+      "passes_durability": true,
+      "passes": true,
+      "residual_CFU_bladder_72h": 55732.86577241486,
+      "C_bar_over_K_in": 1.7327749299056114,
+      "K_in_max_passing": 57.674555355522116
+    },
+    {
+      "psi_max_in": 1.3,
+      "C_bar": 87.06783914843157,
+      "delta_log": 6.274971293647551,
+      "passes_depth": true,
+      "passes_durability": true,
+      "passes": true,
+      "residual_CFU_bladder_72h": 56014.95560019896,
+      "C_bar_over_K_in": 1.7413567829686314,
+      "K_in_max_passing": 57.435197301679246
+    },
+    {
+      "psi_max_in": 1.39,
+      "C_bar": 87.3686341010438,
+      "delta_log": 6.273477792835827,
+      "passes_depth": true,
+      "passes_durability": true,
+      "passes": true,
+      "residual_CFU_bladder_72h": 56212.60355965721,
+      "C_bar_over_K_in": 1.747372682020876,
+      "K_in_max_passing": 57.196832619654955
+    }
+  ]
+}

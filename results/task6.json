@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "C0_ex": 1000000.0,
+      "total_CFU0": 200000000.0,
+      "moi_optimal": 72.50226302712225,
+      "D_per_dose": 14500452605.42445,
+      "particles_per_course": 174005431265.09338,
+      "m_inf": 19.854465875119633,
+      "f_hit_at_t0": 0.21497584541062806
+    },
+    {
+      "C0_ex": 3000000.0,
+      "total_CFU0": 600000000.0,
+      "moi_optimal": 25.155604937582755,
+      "D_per_dose": 15093362962.549652,
+      "particles_per_course": 181120355550.59583,
+      "m_inf": 20.66629697949106,
+      "f_hit_at_t0": 0.4510135135135135
+    },
+    {
+      "C0_ex": 10000000.0,
+      "total_CFU0": 2000000000.0,
+      "moi_optimal": 8.163290175499444,
+      "D_per_dose": 16326580350.998888,
+      "particles_per_course": 195918964211.98666,
+      "m_inf": 22.354856172906175,
+      "f_hit_at_t0": 0.7325102880658436
+    },
+    {
+      "C0_ex": 30000000.0,
+      "total_CFU0": 6000000000.0,
+      "moi_optimal": 3.0402560140999064,
+      "D_per_dose": 18241536084.599438,
+      "particles_per_course": 218898433015.19324,
+      "m_inf": 24.976872485066927,
+      "f_hit_at_t0": 0.8914858096828048
+    },
+    {
+      "C0_ex": 100000000.0,
+      "total_CFU0": 20000000000.0,
+      "moi_optimal": 1.110222836580205,
+      "D_per_dose": 22204456731.6041,
+      "particles_per_course": 266453480779.2492,
+      "m_inf": 30.403025370965615,
+      "f_hit_at_t0": 0.9647696476964769
+    }
+  ],
+  "monotone_increasing_with_burden": false,
+  "f_hit_crossover_CFU_per_mL": 3651685.3932584263,
+  "D_per_dose_span": [
+    14500452605.42445,
+    22204456731.6041
+  ],
+  "D_per_dose_fold_over_100x_burden": 1.5312940454905297,
+  "interpretation": "Required MOI falls as the burden rises, i.e. the opposite of the brief's expectation, and it is not an implementation fault. f_hit = k_enc C / (k_enc C + k_washout + k_loss) crosses over at 3.65e+06 CFU/mL. Below it most particles are washed out before meeting a cell, so m = D k_enc / (V (k_wash + k_loss)) is independent of the burden and the invariant quantity is the absolute D, not the MOI. Handing Implementation an MOI to multiply by the patient's burden is therefore only valid above that crossover."
+}

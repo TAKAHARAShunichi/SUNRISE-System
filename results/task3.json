@@ -1,0 +1,31 @@
+{
+  "min_dose_g_per_dose": 1.0485121145727962,
+  "min_daily_g": 2.0970242291455925,
+  "min_urine_ug_per_mL": 699.0080763818642,
+  "min_serum_peak_ug_per_mL": 51.260592268003364,
+  "safety_cap_dose_g": 0.7159090909090909,
+  "safety_cap_daily_g": 1.5,
+  "exceeds_per_dose_by": 1.464588350514382,
+  "exceeds_daily_by": 1.3980161527637283,
+  "feasible_within_safety": false,
+  "arms": {
+    "untreated": {
+      "dose_g": 0.0,
+      "delta_log": 0.0,
+      "C_bar": 720362579.7320334,
+      "passes": false
+    },
+    "antibiotic_only_baseline": {
+      "dose_g": 0.45,
+      "delta_log": 0.9105588189848113,
+      "C_bar": 266585266.16386393,
+      "passes": false
+    },
+    "antibiotic_only_safety_cap": {
+      "dose_g": 0.7159090909090909,
+      "delta_log": 2.369456303110101,
+      "C_bar": 1799891.6485394002,
+      "passes": false
+    }
+  }
+}

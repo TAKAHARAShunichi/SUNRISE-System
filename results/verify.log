@@ -1,0 +1,27 @@
+  PASS  psi(A=MIC) = 0
+  PASS  psi(A=0) = psi_max
+  PASS  psi(A->inf) -> psi_min
+  PASS  MIC exactly linear in B_cell at h = 1
+  PASS  k_max = psi_max - psi_min = 1.70 /h
+  PASS  rho = 1 at mu_ref with no TPD, for any a
+  PASS  rho = 1 at any mu only when a = 1
+  PASS  k_TPD normalisation: k_TPD(N0_ref) = k_TPD0
+  PASS  adhesion span matches the closed form
+  PASS  N0 = nu * m, phi_bar not applied twice
+  PASS  TPD time constant is set by the slower route
+  PASS  k_washout from residual volume reproduces Table 9.4.3
+  PASS  rest-state immunity reproduces 0.10 /h at the initial load
+  PASS  induced form equals the fixed form at rest
+  PASS  induced N equilibrium at G=1 is 7.75
+  PASS  dose <-> urine <-> serum conversions are consistent
+  PASS  antibiotic closed form matches the iterated sum
+  PASS  states stay non-negative and bounded
+  PASS  judgement is independent of the output grid
+  PASS  C_bar scales with K_in (passing design, floor pinned at K_in)
+  PASS  deeper judgement is monotone in MOI
+  PASS  deeper judgement is monotone in antibiotic dose
+  PASS  judgement is monotone in N0 (nu), not scale-invariant
+  PASS  no SUNRISE leaves rho at 1 (a = 1, growth-independent of mu)
+  PASS  quasi-steady rho matches the integrated rho when TPD is flat
+
+25/25 invariants passed

@@ -1,0 +1,158 @@
+{
+  "margin": 0.7,
+  "rows": [
+    {
+      "tau_P": 3.0,
+      "n_doses": 24,
+      "moi_recommended": 1.3212447641553764,
+      "moi_cap": 6.2152275174455225,
+      "target_C_bar": 70.0,
+      "D_per_dose": 26424895283.10753,
+      "particles_per_course": 634197486794.5807,
+      "m_inf": 36.18177969533185,
+      "worst_C_bar": 69.99661606740318,
+      "worst_delta_log": 6.282740283055676,
+      "A_cell_max": 425.15152655666043,
+      "within_window": true,
+      "compatible_with_cap": true
+    },
+    {
+      "tau_P": 4.0,
+      "n_doses": 18,
+      "moi_recommended": 1.799432147512541,
+      "moi_cap": 7.209583170316229,
+      "target_C_bar": 70.0,
+      "D_per_dose": 35988642950.25082,
+      "particles_per_course": 647795573104.5146,
+      "m_inf": 49.276757270343424,
+      "worst_C_bar": 69.97391312875008,
+      "worst_delta_log": 6.281696806645939,
+      "A_cell_max": 500.2781177951617,
+      "within_window": true,
+      "compatible_with_cap": true
+    },
+    {
+      "tau_P": 6.0,
+      "n_doses": 12,
+      "moi_recommended": 3.2931170113550663,
+      "moi_cap": 8.085648239883447,
+      "target_C_bar": 70.0,
+      "D_per_dose": 65862340227.101326,
+      "particles_per_course": 790348082725.216,
+      "m_inf": 90.1807427724926,
+      "worst_C_bar": 69.95442550782028,
+      "worst_delta_log": 6.2883293919736145,
+      "A_cell_max": 813.7283434061804,
+      "within_window": true,
+      "compatible_with_cap": true
+    },
+    {
+      "tau_P": 8.0,
+      "n_doses": 9,
+      "moi_recommended": 5.212975030994866,
+      "moi_cap": 8.306796930471885,
+      "target_C_bar": 70.0,
+      "D_per_dose": 104259500619.89732,
+      "particles_per_course": 938335505579.0759,
+      "m_inf": 142.7553162333979,
+      "worst_C_bar": 69.98611572313132,
+      "worst_delta_log": 6.291139345641552,
+      "A_cell_max": 1245.0120383995804,
+      "within_window": true,
+      "compatible_with_cap": true
+    }
+  ],
+  "floor_note": "C_bar cannot fall below K_in = 50 CFU/mL, so the durability margin against the 10^2 threshold is structurally capped at 2x.",
+  "margin_curve_tau_P_6h": [
+    {
+      "MOI": 1.4,
+      "worst_C_bar": 101.10015279041154,
+      "worst_delta_log": 6.247249327495179,
+      "passes_all_phases": false,
+      "margin_fraction": 1.0110015279041153,
+      "A_cell_max": 346.6122177389864,
+      "within_window": true,
+      "particles_per_course": 336000000000.0
+    },
+    {
+      "MOI": 2.239,
+      "worst_C_bar": 76.89787491621321,
+      "worst_delta_log": 6.284149486542903,
+      "passes_all_phases": true,
+      "margin_fraction": 0.7689787491621322,
+      "A_cell_max": 554.1153705821267,
+      "within_window": true,
+      "particles_per_course": 537360000000.0
+    },
+    {
+      "MOI": 3.582,
+      "worst_C_bar": 68.49599450179397,
+      "worst_delta_log": 6.289263107050818,
+      "passes_all_phases": true,
+      "margin_fraction": 0.6849599450179398,
+      "A_cell_max": 885.9537406234772,
+      "within_window": true,
+      "particles_per_course": 859680000000.0
+    },
+    {
+      "MOI": 5.73,
+      "worst_C_bar": 62.580963954600804,
+      "worst_delta_log": 6.2873673561782955,
+      "passes_all_phases": true,
+      "margin_fraction": 0.625809639546008,
+      "A_cell_max": 1414.5739071901933,
+      "within_window": true,
+      "particles_per_course": 1375200000000.0002
+    },
+    {
+      "MOI": 9.165,
+      "worst_C_bar": 59.00324135863674,
+      "worst_delta_log": 6.291564506484406,
+      "passes_all_phases": true,
+      "margin_fraction": 0.5900324135863674,
+      "A_cell_max": 2256.9953348721488,
+      "within_window": false,
+      "particles_per_course": 2199599999999.9995
+    },
+    {
+      "MOI": 14.66,
+      "worst_C_bar": 56.07811878134612,
+      "worst_delta_log": 6.294016574720518,
+      "passes_all_phases": true,
+      "margin_fraction": 0.5607811878134612,
+      "A_cell_max": 3591.715339583043,
+      "within_window": false,
+      "particles_per_course": 3518400000000.0
+    },
+    {
+      "MOI": 23.45,
+      "worst_C_bar": 54.179868087279345,
+      "worst_delta_log": 6.294714869192355,
+      "passes_all_phases": true,
+      "margin_fraction": 0.5417986808727935,
+      "A_cell_max": 5713.55289138626,
+      "within_window": false,
+      "particles_per_course": 5628000000000.0
+    },
+    {
+      "MOI": 37.51,
+      "worst_C_bar": 52.95532265197883,
+      "worst_delta_log": 6.295672436816851,
+      "passes_all_phases": true,
+      "margin_fraction": 0.5295532265197883,
+      "A_cell_max": 9176.363619197351,
+      "within_window": false,
+      "particles_per_course": 9002400000000.0
+    },
+    {
+      "MOI": 60.0,
+      "worst_C_bar": 52.05412877150559,
+      "worst_delta_log": 6.296369608771162,
+      "passes_all_phases": true,
+      "margin_fraction": 0.5205412877150559,
+      "A_cell_max": 14709.234097273848,
+      "within_window": false,
+      "particles_per_course": 14400000000000.0
+    }
+  ]
+}

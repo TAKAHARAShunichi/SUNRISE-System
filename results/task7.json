@@ -1,0 +1,60 @@
+{
+  "zero_class_at_t0": 0.35109180610008506,
+  "zero_class_max": 0.35109180610008506,
+  "fraction_of_course_above_1pct": 0.02359472588480222,
+  "mean_field_has_discrete_zero_class": false,
+  "note": "The mean-field model carries one compartment mean A_cell and has neither a discrete per-dose zero class nor a continuous lambda' conversion between treated and untreated pools; sunrise.zeroclass adds the discrete split.",
+  "moi_meanfield": 1.1083520640156186,
+  "moi_with_zero_class": 1.1399472772910035,
+  "moi_inflation": 1.0285064775906256,
+  "samples": [
+    {
+      "MOI": 0.5,
+      "m0": 0.48238482384823844,
+      "zero_class_at_t0": 0.6897429311482447,
+      "zero_class_max": 0.6897429311482447,
+      "meanfield_delta_log": 5.31581370429139,
+      "meanfield_C_bar": 2303.3174459804686,
+      "meanfield_passes": false,
+      "zeroclass_delta_log": 5.1506945712979135,
+      "zeroclass_C_bar": 3440.975287500548,
+      "zeroclass_passes": false
+    },
+    {
+      "MOI": 1.409,
+      "m0": 1.359360433604336,
+      "zero_class_at_t0": 0.35109180610008506,
+      "zero_class_max": 0.35109180610008506,
+      "meanfield_delta_log": 6.274971293647551,
+      "meanfield_C_bar": 87.06783914843157,
+      "meanfield_passes": true,
+      "zeroclass_delta_log": 6.274691728217559,
+      "zeroclass_C_bar": 87.40792249132511,
+      "zeroclass_passes": true
+    },
+    {
+      "MOI": 3.2,
+      "m0": 3.087262872628726,
+      "zero_class_at_t0": 0.09281078651710363,
+      "zero_class_max": 0.09281078651710363,
+      "meanfield_delta_log": 6.28904368816654,
+      "meanfield_C_bar": 69.26384061210838,
+      "meanfield_passes": true,
+      "zeroclass_delta_log": 6.289046341508574,
+      "zeroclass_C_bar": 69.2638594835306,
+      "zeroclass_passes": true
+    },
+    {
+      "MOI": 9.5,
+      "m0": 9.16531165311653,
+      "zero_class_at_t0": 0.0008611085622719538,
+      "zero_class_max": 0.0008611085622719538,
+      "meanfield_delta_log": 6.295700901370971,
+      "meanfield_C_bar": 55.106813433176995,
+      "meanfield_passes": true,
+      "zeroclass_delta_log": 6.295700914360882,
+      "zeroclass_C_bar": 55.106813425127164,
+      "zeroclass_passes": true
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "tau_P": 2.0,
+      "n_doses": 36,
+      "moi_min_any_dose": 0.01,
+      "moi_min_at_baseline_dose_0.45g": 1.4623086955028959,
+      "moi_optimal_safe": 0.3711761631302934,
+      "moi_cap": 4.681770882124347,
+      "compatible": true,
+      "A_cell_max_at_optimal": 48.736862819549174,
+      "particles_per_dose_at_optimal": 7423523262.605867,
+      "particles_per_course_at_optimal": 267246837453.81122,
+      "m_inf_at_optimal": 10.164516467260343
+    },
+    {
+      "tau_P": 3.0,
+      "n_doses": 24,
+      "moi_min_any_dose": 0.01,
+      "moi_min_at_baseline_dose_0.45g": 2.3369657296871673,
+      "moi_optimal_safe": 0.5591889666325339,
+      "moi_cap": 6.2152275174455225,
+      "compatible": true,
+      "A_cell_max_at_optimal": 61.454574374528214,
+      "particles_per_dose_at_optimal": 11183779332.650679,
+      "particles_per_course_at_optimal": 268410703983.61627,
+      "m_inf_at_optimal": 15.313174778552469
+    },
+    {
+      "tau_P": 4.0,
+      "n_doses": 18,
+      "moi_min_any_dose": 0.01,
+      "moi_min_at_baseline_dose_0.45g": 3.635355401559122,
+      "moi_optimal_safe": 0.7549699877410126,
+      "moi_cap": 7.161112042741897,
+      "compatible": true,
+      "A_cell_max_at_optimal": 84.74895689973435,
+      "particles_per_dose_at_optimal": 15099399754.820253,
+      "particles_per_course_at_optimal": 271789195586.76456,
+      "m_inf_at_optimal": 20.674562741215425
+    },
+    {
+      "tau_P": 6.0,
+      "n_doses": 12,
+      "moi_min_any_dose": 0.01,
+      "moi_min_at_baseline_dose_0.45g": 9.300490626211149,
+      "moi_optimal_safe": 1.2972901164371877,
+      "moi_cap": 8.976871324473143,
+      "compatible": true,
+      "A_cell_max_at_optimal": 99.08904162983681,
+      "particles_per_dose_at_optimal": 25945802328.743755,
+      "particles_per_course_at_optimal": 311349627944.92505,
+      "m_inf_at_optimal": 35.52579088089529
+    },
+    {
+      "tau_P": 8.0,
+      "n_doses": 9,
+      "moi_min_any_dose": 0.01,
+      "moi_min_at_baseline_dose_0.45g": 17.893098260283082,
+      "moi_optimal_safe": 1.830000346135133,
+      "moi_cap": 16.390779555580345,
+      "compatible": true,
+      "A_cell_max_at_optimal": 78.81876180440085,
+      "particles_per_dose_at_optimal": 36600006922.70266,
+      "particles_per_course_at_optimal": 329400062304.3239,
+      "m_inf_at_optimal": 50.113855632623654
+    },
+    {
+      "tau_P": 12.0,
+      "n_doses": 6,
+      "moi_min_any_dose": 0.01,
+      "moi_min_at_baseline_dose_0.45g": 362.5151590425858,
+      "moi_optimal_safe": 20.101231083672435,
+      "moi_cap": 73.6525012271228,
+      "compatible": true,
+      "A_cell_max_at_optimal": 542.0487539626166,
+      "particles_per_dose_at_optimal": 402024621673.44867,
+      "particles_per_course_at_optimal": 2412147730040.692,
+      "m_inf_at_optimal": 550.4644819836452
+    }
+  ],
+  "largest_compatible_tau_P": 12.0,
+  "note": "moi_min_any_dose lifts the safety box; the antibiotic alone passes at 1.05 g/dose, so this column reports the floor of the MOI search range rather than a SUNRISE requirement."
+}

@@ -1,0 +1,84 @@
+{
+  "eta_reconciliation": {
+    "quoted_in_manuscript": 0.7575,
+    "A_used_ug_per_mL": 300.0,
+    "MIC_R0_used": 163.2,
+    "eta_at_psi_zero_quoted_form": 0.7049576784405156,
+    "eta_at_psi_zero_implemented_form": 0.5439999999999999,
+    "eta_quoted_form_at_MIC_R0_125": 0.5399492022369147,
+    "eta_implemented_form_at_MIC_R0_125": 0.4166666666666667,
+    "eta_scales_as": "eta is proportional to MIC_R0 / A",
+    "forms_agree": false,
+    "reconciles_with_0.7575": false,
+    "note": "The implemented denominator is x^kappa - psi_min/psi_max, which makes psi(A = MIC) = 0 exactly; the quoted derivation used 1 + x^kappa, which does not. The two give different eta."
+  },
+  "immune_replacement_invariance": {
+    "fixed_delta_log": 6.274971293647551,
+    "swapped_at_rest_delta_log": 6.274971293602858,
+    "fixed_C_bar": 87.06783914843157,
+    "swapped_at_rest_C_bar": 87.06783920394628,
+    "unchanged": true
+  },
+  "induced_immunity_contribution": {
+    "fixed_at_rest": {
+      "delta_log": 6.274971293647551,
+      "C_bar": 87.06783914843157,
+      "passes": true,
+      "N_final": 2.092130655343662,
+      "N_PMN_final_per_mL": 209213.0655343662,
+      "N_max_over_course": 5.712523267162747,
+      "N_PMN_max_per_mL": 571252.3267162747
+    },
+    "induced": {
+      "delta_log": 6.297210622271737,
+      "C_bar": 73.34399817233862,
+      "passes": true,
+      "N_final": 1.4178320321940403,
+      "N_PMN_final_per_mL": 141783.20321940404,
+      "N_max_over_course": 3.5088275768348858,
+      "N_PMN_max_per_mL": 350882.7576834886
+    },
+    "induced_untreated": {
+      "delta_log": 0.0,
+      "C_bar": 529228450.14539784,
+      "passes": false,
+      "N_final": 7.745449964599335,
+      "N_PMN_final_per_mL": 774544.9964599336,
+      "N_max_over_course": 7.745449964599335,
+      "N_PMN_max_per_mL": 774544.9964599336
+    },
+    "observed_N_PMN_standard_patient": 900000.0,
+    "reproduces_observed_pyuria": true,
+    "note": "The standard patient's 900 WBC/uL (9e5 /mL) is the value observed at presentation. The induced model is driven by G = L/(K_G + L), which saturates at the initial burden, so N_PMN_max is the figure to compare against the clinical observation."
+  },
+  "calibration_structure": {
+    "delta_log_parent": 6.274971293647551,
+    "delta_log_workers": [
+      6.274971293647551,
+      6.274971293647551
+    ],
+    "identical": true,
+    "module_level_mutable_state": false
+  },
+  "analytic_table": {
+    "k_enc_mL_per_h": 1.78e-07,
+    "k_bar_crit_per_h": 0.7599999999999998,
+    "adhesion_span": 28.38461538461539,
+    "m0": 1.359360433604336,
+    "m_inf": 38.58492307692308,
+    "N0_at_t0": 43.90734200542005,
+    "f_hit_at_t0": 0.9647696476964769,
+    "tau_response_min": 25.785257794561115,
+    "tau_TPD_eff_initial_min": 57.47126436781609,
+    "tau_TPD_eff_late_min": 92.30516456626266,
+    "crossover_density_CFU_per_mL": 2865168.539325842,
+    "MIC_R0": 163.2,
+    "rho_in_crit": 0.05,
+    "k_max_requirement_at_theta_0.61": 1.245901639344262,
+    "mu_ref_per_h": 0.9041050181216678,
+    "k_XB_per_h": 0.058911000000000005,
+    "k_TPD0_per_h": 1.2240000000000002,
+    "k_PMN_implied": 2e-06,
+    "zero_class_at_m0": 0.35109180610008506
+  }
+}
