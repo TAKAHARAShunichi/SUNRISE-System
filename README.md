@@ -14,13 +14,13 @@
 
 | パス | 内容 |
 | --- | --- |
+| `HANDOFF.md` | 申し送り。次のセッションはここから読む |
 | `sunrise/params.py` | 全パラメータ（Ver.23 Table 9.4.5 / 7 / 10 / 14 / 22）と用量換算 |
 | `sunrise/model.py` | 9 変数 ODE（CPI 体内動態・薬力学・自然免疫・集団動態） |
 | `sunrise/metrics.py` | 判定量 Δlog10 と C̄^tot、有効窓占有率 |
 | `sunrise/analytic.py` | 積分なしで決まる閉形式（Results ① 相当） |
 | `sunrise/design.py` | 決定論的設計探索（二分法・目的関数 J） |
 | `sunrise/zeroclass.py` | ポアソン 0 クラスを明示した変種（タスク 7） |
-| `HANDOFF.md` | 申し送り。次のセッションはここから読む |
 | `sunrise/verify.py` | 不変量チェック 25 項目 |
 | `scripts/` | タスク実行スクリプトと図・報告書の生成 |
 | `results/` | 数値（JSON / CSV）と `RESULTS.md` |
