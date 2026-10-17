@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+
+# 配布用アーカイブ（リポジトリの中身の派生物なので追跡しない）
+sunrise-model-*.zip
+
+# 原稿は Drive が正本。公開前に削除する編集ノートを含むため追跡しない
+results/SUNRISE-2_Ver*_source.md
