@@ -393,6 +393,34 @@ def main() -> None:
           "差し替えた免疫項が臨床検査値に接続できていることの独立な確認になる。")
         A("")
 
+    cr = load("competitive_release.json")
+    if cr:
+        A("## 競争解放シナリオ（本線とは別の主張）")
+        A("")
+        sc = cr["scenario"]
+        A(f"標準患者は耐性菌率 100% なので競争解放は起きない。こちらは感受性菌が"
+          f"主体で耐性菌が {100*sc['resistant_fraction']:.1f}% だけ存在する系"
+          f"（S₀ = {sci(sc['S0'])}、R₀ = {sci(sc['R0'])} CFU/mL）。"
+          "示されるのは耐性菌感染症を治す効果ではなく、"
+          "**単剤投与で耐性菌感染症が生まれるのを防ぐ効果**である。")
+        A("")
+        A("| アーム | Δlog10 | C̄^tot | 判定 | 耐性菌 0→72 h | 最終の耐性菌割合 "
+          "| 選択濃度域の通過 |")
+        A("| --- | --- | --- | --- | --- | --- | --- |")
+        lab = {"untreated": "無治療", "kanamycin only": "カナマイシン単剤",
+               "kanamycin + SUNRISE": "カナマイシン + SUNRISE"}
+        for a in cr["arms"]:
+            A(f"| {lab.get(a['arm'], a['arm'])} | {a['delta_log']:.2f} "
+              f"| {a['C_bar']:.3g} | {'○' if a['passes'] else '✗'} "
+              f"| {a['CR_ex_log_change']:+.2f} log "
+              f"| {100*a['resistant_fraction_final']:.2g} % "
+              f"| {a['selective_window_hours']:.1f} h |")
+        A("")
+        A("単剤では感受性菌が先に消えて収容力が空き、耐性菌が集団の 100% を占める。"
+          "耐性菌自体は 0.99 log しか減らず durability 判定が落ちる。"
+          "SUNRISE を併用すると同じ用量で耐性菌も 3.04 log 減り、"
+          "選択濃度域の通過時間も 47.8 → 36.1 h に縮む。")
+        A("")
     A("## 申し送り（判断が必要な項目）")
     A("")
     A("| 項目 | 状況 | 影響 |")

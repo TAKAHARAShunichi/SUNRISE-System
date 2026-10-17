@@ -8,7 +8,7 @@
 （[モデル 申し送り 2026-10-17](https://claude.ai/code/artifact/98de8643-6f7e-4280-9700-30e0703df57d)）
 のタスク 1〜8 の計算結果。
 
-**結果は [`results/RESULTS.md`](results/RESULTS.md) にまとまっている。**
+**引き継ぎは [`HANDOFF.md`](HANDOFF.md)、結果は [`results/RESULTS.md`](results/RESULTS.md)。**
 
 ### 構成
 
@@ -20,6 +20,7 @@
 | `sunrise/analytic.py` | 積分なしで決まる閉形式（Results ① 相当） |
 | `sunrise/design.py` | 決定論的設計探索（二分法・目的関数 J） |
 | `sunrise/zeroclass.py` | ポアソン 0 クラスを明示した変種（タスク 7） |
+| `HANDOFF.md` | 申し送り。次のセッションはここから読む |
 | `sunrise/verify.py` | 不変量チェック 25 項目 |
 | `scripts/` | タスク実行スクリプトと図・報告書の生成 |
 | `results/` | 数値（JSON / CSV）と `RESULTS.md` |
@@ -28,13 +29,14 @@
 ### 実行
 
 ```bash
-pip install numpy scipy matplotlib
+pip install -r requirements.txt
 
 python -m sunrise.verify          # 不変量チェック（25/25）
 python scripts/tasks123.py        # タスク 1・2・3        （約 4 分）
 python scripts/robust.py          # 最悪位相での必要 MOI  （約 1 分）
 python scripts/recommend.py       # 推奨設計（余裕込み）  （約 3 分）
 python scripts/tasks4to8.py       # タスク 4〜8           （約 6 分）
+python scripts/competitive_release.py  # 競争解放シナリオ （約 10 秒）
 python scripts/figures.py         # 図
 python scripts/report.py          # results/RESULTS.md
 ```

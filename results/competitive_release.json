@@ -1,0 +1,59 @@
+{
+  "scenario": {
+    "S0": 100000000.0,
+    "R0": 100000.0,
+    "resistant_fraction": 0.000999000999000999,
+    "tau_P": 6.0,
+    "MOI": 3.293,
+    "dose_g": 0.7159090909090909,
+    "gamma_conj": 1e-11
+  },
+  "arms": [
+    {
+      "arm": "untreated",
+      "dose_g": 0.0,
+      "MOI": 0.0,
+      "delta_log": 0.0,
+      "C_bar": 720362579.7320307,
+      "passes": false,
+      "CR_ex_initial": 100000.0,
+      "CR_ex_final": 1186375.3290025264,
+      "CR_ex_log_change": 1.0742221068424174,
+      "CR_ex_peak": 1186375.3290025264,
+      "resistant_fraction_initial": 0.000999000999000999,
+      "resistant_fraction_final": 0.0016469142689081917,
+      "selective_window_hours": 0.0
+    },
+    {
+      "arm": "kanamycin only",
+      "dose_g": 0.7159090909090909,
+      "MOI": 0.0,
+      "delta_log": 5.419449280146072,
+      "C_bar": 1486.6728861060978,
+      "passes": false,
+      "CR_ex_initial": 100000.0,
+      "CR_ex_final": 10283.279723800058,
+      "CR_ex_log_change": -0.9878683504397213,
+      "CR_ex_peak": 100000.0,
+      "resistant_fraction_initial": 0.000999000999000999,
+      "resistant_fraction_final": 1.0,
+      "selective_window_hours": 47.800000000000004
+    },
+    {
+      "arm": "kanamycin + SUNRISE",
+      "dose_g": 0.7159090909090909,
+      "MOI": 3.293,
+      "delta_log": 6.289812458418795,
+      "C_bar": 68.64389182173902,
+      "passes": true,
+      "CR_ex_initial": 100000.0,
+      "CR_ex_final": 91.95000904196417,
+      "CR_ex_log_change": -3.0364482237192703,
+      "CR_ex_peak": 100000.0,
+      "resistant_fraction_initial": 0.000999000999000999,
+      "resistant_fraction_final": 1.0,
+      "selective_window_hours": 36.15
+    }
+  ],
+  "note": "The claim here is prevention, not cure: kanamycin alone clears the susceptible majority and frees carrying capacity, so the resistant minority expands. Adding SUNRISE lowers MIC(t) so the same dose also reaches the resistant subpopulation."
+}
